@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/panelbg"
+    tools:context=".View.LoginRestoranActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="RESTORAN"
+        android:textColor="@color/ozel1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PANEL"
+        android:textColor="#E4DEDE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/edtLoginRestoranMail"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_edt"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:hint="Mail Adres"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <EditText
+        android:id="@+id/edtLoginRestoranSifre"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edt"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginRestoranMail" />
+
+    <Button
+        android:id="@+id/btnLoginRestoran"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/ozel4"
+        android:textColor="@color/ozel1"
+        android:text="Giriş YAp"
+        app:layout_constraintEnd_toEndOf="@+id/edtLoginRestoranSifre"
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginRestoranSifre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

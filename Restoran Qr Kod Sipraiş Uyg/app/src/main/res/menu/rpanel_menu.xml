@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_profil"
+        android:title=""
+        android:icon="@drawable/ic_rpanelprofile"/>
+    <item
+        android:id="@+id/nav_sifre"
+        android:title=""
+        android:icon="@drawable/ic_rpanelsifre"/>
+    <item
+        android:id="@+id/nav_calisanlar"
+        android:title=""
+        android:icon="@drawable/ic_rpanelcalisanlar"/>
+</menu>
